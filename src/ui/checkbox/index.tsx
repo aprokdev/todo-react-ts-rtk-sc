@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
-import { $colorSecondary, $primary } from '~src/styles/vars';
+import { $colorSecondary, $primary } from '~styles/vars';
 import { IconCheck } from './icon';
 import './style.scss';
 import { ICheckboxProps } from './types';

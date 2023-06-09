@@ -5,11 +5,11 @@ import { useInView } from 'react-intersection-observer';
 import 'react-intersection-observer/test-utils';
 import styled from 'styled-components';
 import { checkTodo, deleteTodo, editTodo } from '~app-state/todos/todosSlice';
-import { $ipadPortrait, $primary, $primaryActive, $text01 } from '~src/styles/vars';
 import { ITodo } from '~src/todo-context/types';
 import Checkbox from '~ui/checkbox';
 import Label from '~ui/label';
 import TextareaAutosize from '~ui/textarea-autosize';
+import { $ipadPortrait, $primary, $primaryActive, $text01 } from '~styles/vars';
 import './style.scss';
 import { ITodoProps } from './type';
 

@@ -18,17 +18,21 @@ exports[`Todo Functionality matches snapshot 1`] = `
       src=""
     />
     <img
-      alt="Redux-logo.js"
+      alt=""
       className="app__head-img app__head-img--redux"
       src=""
-      title="Redux"
+    />
+    <img
+      alt=""
+      className="app__head-img app__head-img"
+      src=""
     />
   </div>
   <form
-    className="create-todo"
+    className="sc-ewnqHT dkEVeG"
   >
     <input
-      className="input"
+      className="sc-gTRrQi ftFmhr input"
       data-testid="todo-input"
       id="new-todo-input"
       onChange={[Function]}
@@ -37,7 +41,7 @@ exports[`Todo Functionality matches snapshot 1`] = `
       value=""
     />
     <button
-      className="button"
+      className="sc-bgqQcB jbxjhH button"
       data-testid="todo-create-btn"
       disabled={true}
       onClick={[Function]}

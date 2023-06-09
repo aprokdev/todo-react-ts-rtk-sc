@@ -2,25 +2,25 @@
 
 exports[`TodoItem matches snapshot 1`] = `
 <div
-  className="todo-item todo-item--invisible"
+  className="sc-dicizt fA-dTSy"
 >
   <div
-    className="todo-item__check-group"
+    className="sc-iVCKna jJWGqI"
   >
     <span
-      className="checkbox"
+      className="sc-bgqQcB dnOXXu checkbox"
       data-testid="Test-cb"
     >
       <input
         checked={false}
-        className="checkbox__input"
+        className="sc-ewnqHT jhdmVO"
         data-testid="Test-cb-input"
         id="todo-item"
         onChange={[Function]}
         type="checkbox"
       />
       <label
-        className="checkbox__square"
+        className="sc-gTRrQi jdiLYQ"
         data-testid="Test-cb-square"
         htmlFor="todo-item"
         onKeyDown={[Function]}
@@ -28,7 +28,7 @@ exports[`TodoItem matches snapshot 1`] = `
       />
     </span>
     <label
-      className="label"
+      className="sc-fFGjHI biSUEn label"
       data-testid="Test-label"
       htmlFor="todo-item"
     >
@@ -36,12 +36,12 @@ exports[`TodoItem matches snapshot 1`] = `
     </label>
   </div>
   <span
-    className="todo-item__created"
+    className="sc-gxYJeL THoRp"
   >
     02/12/23, 03:00:43 PM
   </span>
   <button
-    className="todo-item__action-btn"
+    className="sc-ispOId fMiwyq"
     data-testid="Test-edit"
     disabled={false}
     onClick={[Function]}
@@ -50,12 +50,12 @@ exports[`TodoItem matches snapshot 1`] = `
     Edit
   </button>
   <span
-    className="todo-item__separator"
+    className="sc-kPTPQs bZqaZc"
   >
     /
   </span>
   <button
-    className="todo-item__action-btn"
+    className="sc-ispOId fMiwyq"
     data-testid="Test-delete"
     disabled={false}
     onClick={[Function]}

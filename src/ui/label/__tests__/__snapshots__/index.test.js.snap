@@ -2,7 +2,7 @@
 
 exports[`Checkbox matches snapshot 1`] = `
 <label
-  className="label test"
+  className="sc-fFGjHI biSUEn label test"
   data-testid="label"
   htmlFor="test"
 >
