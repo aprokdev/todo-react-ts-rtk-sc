@@ -1,5 +1,7 @@
-@import '~styles/vars';
+import { createGlobalStyle } from 'styled-components';
+import { $desktopBreakpoint, $text01 } from './styles/vars';
 
+export const GlobalStyle = createGlobalStyle`
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +52,7 @@ main,
     padding-top: 56px;
 
     // min-height: calc(100vh - 55px);
-    @media (min-width: $desktop-breakpoint) {
+    @media (min-width: ${$desktopBreakpoint}) {
         padding-top: 80px;
 
         // margin-top: 80px;
@@ -69,7 +71,7 @@ h4,
 h5,
 h6 {
     // font-weight: 800;
-    color: $text-01;
+    color: ${$text01};
 }
 
 h1 {
@@ -78,7 +80,7 @@ h1 {
     // line-height: 28px;
     // line-height: 68px;
     line-height: 50px;
-    @media (min-width: $desktop-breakpoint) {
+    @media (min-width: ${$desktopBreakpoint}) {
         font-size: 50px;
         font-size: 68px;
         font-weight: 400;
@@ -90,7 +92,7 @@ h1 {
 h2 {
     font-size: 20px;
     line-height: 24px;
-    @media (min-width: $desktop-breakpoint) {
+    @media (min-width: ${$desktopBreakpoint}) {
         font-size: 44px;
         font-weight: 400;
         line-height: 48px;
@@ -102,7 +104,7 @@ h3 {
     // line-height: 24px;
     font-size: 24px;
     line-height: 36px;
-    @media (min-width: $desktop-breakpoint) {
+    @media (min-width: ${$desktopBreakpoint}) {
         font-size: 36px;
         font-weight: 400;
         line-height: 40px;
@@ -112,7 +114,7 @@ h3 {
 h4 {
     font-size: 15px;
     line-height: 20px;
-    @media (min-width: $desktop-breakpoint) {
+    @media (min-width: ${$desktopBreakpoint}) {
         font-size: 28px;
         font-weight: 400;
         line-height: 32px;
@@ -122,7 +124,7 @@ h4 {
 h5 {
     font-size: 13px;
     line-height: 20px;
-    @media (min-width: $desktop-breakpoint) {
+    @media (min-width: ${$desktopBreakpoint}) {
         font-size: 24px;
         font-weight: 400;
         line-height: 28px;
@@ -145,7 +147,7 @@ h6 {
 .body-s,
 .body-xs-bold,
 .body-xs {
-    color: $text-01;
+    color: ${$text01};
 }
 
 .body-xl-bold {
@@ -207,3 +209,7 @@ h6 {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+`;
+
+export default GlobalStyle;

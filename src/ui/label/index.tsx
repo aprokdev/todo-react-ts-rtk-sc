@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import * as React from 'react';
 import styled from 'styled-components';
-import './style.scss';
 import { ILabelProps } from './types';
 
 export const StyledLabel = styled.label`

@@ -2,10 +2,15 @@ const path = require('path');
 const baseConfig = require('./base');
 const { merge } = require('webpack-merge');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-// const { extendDefaultPlugins } = require('svgo');
+// 1. import default from the plugin module
+// const createStyledComponentsTransformer = require('typescript-plugin-styled-components').default;
+
+// 2. create a transformer;
+// the factory additionally accepts an options object which described below
+// const styledComponentsTransformer = createStyledComponentsTransformer();
 
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
@@ -16,18 +21,18 @@ module.exports = merge(baseConfig, {
         maxAssetSize: 350000,
         maxEntrypointSize: 350000,
     },
-    module: {
-        rules: [
-            {
-                test: /\.(scss|sass|css)?$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
-            },
-        ],
-    },
+    // module: {
+    //     rules: [
+    //         {
+    //             test: /\.tsx?$/,
+    //             loader: 'ts-loader',
+    //             options: {
+    //                 getCustomTransformers: () => ({ before: [styledComponentsTransformer] }),
+    //             },
+    //         },
+    //     ],
+    // },
     plugins: [
-        new MiniCssExtractPlugin({
-            filename: 'styles/main.[chunkhash:6].css',
-        }),
         new ImageMinimizerPlugin({
             minimizerOptions: {
                 plugins: [

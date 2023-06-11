@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 import { $primary, $primaryActive, $primaryHover } from '~styles/vars';
-import './style.scss';
 import { IButtonProps } from './types';
 
 export const StyledButton = styled.button`

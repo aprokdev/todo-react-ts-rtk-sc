@@ -5,7 +5,6 @@ import { setHideCompleted } from '~app-state/hideCompleted/hideCompletedSlice';
 import { RootState } from '~app-state/store';
 import Checkbox from '~ui/checkbox';
 import Label from '~ui/label';
-import './style.scss';
 
 export const Wrapper = styled.div`
     display: flex;

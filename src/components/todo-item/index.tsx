@@ -10,7 +10,6 @@ import Checkbox from '~ui/checkbox';
 import Label from '~ui/label';
 import TextareaAutosize from '~ui/textarea-autosize';
 import { $ipadPortrait, $primary, $primaryActive, $text01 } from '~styles/vars';
-import './style.scss';
 import { ITodoProps } from './type';
 
 export const Wrapper = styled.div<{ isVisible: boolean }>`

@@ -4,7 +4,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { $colorSecondary, $primary } from '~styles/vars';
 import { IconCheck } from './icon';
-import './style.scss';
 import { ICheckboxProps } from './types';
 
 export const Wrapper = styled.span`

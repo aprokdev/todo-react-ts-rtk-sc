@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '~app-state/store';
 import { ITodo } from '~src/todo-context/types';
 import TodoItem from '~components/todo-item/index';
-import './style.scss';
 
 function TodosList(): JSX.Element {
     const listTodos = useSelector((state: RootState) => state.todos);

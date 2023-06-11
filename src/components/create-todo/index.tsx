@@ -6,7 +6,6 @@ import { addTodo } from '~app-state/todos/todosSlice';
 import Button from '~ui/button';
 import Input from '~ui/input';
 import { $ipadPortrait } from '~styles/vars';
-import './style.scss';
 
 export const Form = styled.form`
     margin-bottom: 32px;

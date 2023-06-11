@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const SimpleProgressPlugin = require('webpack-simple-progress-plugin');
 
-const barColor = '#764abc';
+const barColor = '#FD5DA8';
 
 module.exports = {
     entry: [require.resolve('../polyfills'), path.resolve(__dirname, '../src/index.tsx')],
@@ -28,10 +28,10 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.(scss|sass|css)?$/,
-                use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
-            },
+            // {
+            //     test: /\.(scss|sass|css)?$/,
+            //     use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+            // },
             {
                 test: /\.(js|jsx|tsx|ts)?$/,
                 exclude: /(node_modules|bower_components)/,

@@ -11,7 +11,6 @@ import {
 } from '~app-state/sortingTitle/sortingTitleSlice';
 import { RootState } from '~app-state/store';
 import { sortingText } from '~todo-context/reducer';
-import './style.scss';
 
 export const SortingWrap = styled.div`
     display: flex;
