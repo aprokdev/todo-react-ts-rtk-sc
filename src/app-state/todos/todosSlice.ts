@@ -93,14 +93,12 @@ export const todosSlice = createSlice({
                 });
             })
             .addCase(sortByAlphabetReverse, (state: TodosState) => {
-                state
-                    .sort((a: ITodo, b: ITodo) => {
-                        if (a.label < b.label) {
-                            return -1;
-                        }
-                        return 1;
-                    })
-                    .reverse();
+                state.sort((a: ITodo, b: ITodo) => {
+                    if (a.label > b.label) {
+                        return -1;
+                    }
+                    return 1;
+                });
             })
             // You can match a range of action types
             .addMatcher(

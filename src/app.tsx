@@ -5,9 +5,9 @@ import CreateTodo from '~components/create-todo';
 import HideChecked from '~components/hide-checked';
 import Sorting from '~components/sorting';
 import TodosList from '~components/todos-list';
-import icon from '~img/icon.svg';
-import reduxLogo from '~img/redux-logo.png';
+import reduxLogo from '~img/redux.svg';
 import styledLogo from '~img/styled-components-logo.png';
+import tsLogo from '~img/tsLogo.svg';
 import { RootState } from './app-state/store';
 import { $ipadPortrait } from './styles/vars';
 
@@ -56,12 +56,17 @@ export const Title = styled.h1`
     }
 `;
 
-export const Image = styled.img<{ reduxImage?: boolean }>`
+export const Link = styled.a`
     display: block;
-    width: ${({ reduxImage }) => (reduxImage ? '54px' : '50px')};
+    width: 50px;
     height: 50px;
     margin-left: 20px;
-    object-fit: ${({ reduxImage }) => (reduxImage ? 'fill' : 'cover')};
+`;
+
+export const Image = styled.img`
+    display: block;
+    width: 100%;
+    height: 100%;
 `;
 
 function App() {
@@ -71,9 +76,30 @@ function App() {
         <Wrap>
             <Head>
                 <Title>Todo List</Title>
-                <Image src={icon} alt="" />
-                <Image src={reduxLogo} alt="" reduxImage />
-                <Image src={styledLogo} alt="" />
+                <Link
+                    href="https://www.typescriptlang.org/"
+                    className="app__link"
+                    target="__blank"
+                    rel="noreferer noopener"
+                >
+                    <Image src={tsLogo} alt="" />
+                </Link>
+                <Link
+                    href="https://redux-toolkit.js.org/"
+                    className="app__link"
+                    target="__blank"
+                    rel="noreferer noopener"
+                >
+                    <Image src={reduxLogo} alt="" />
+                </Link>
+                <Link
+                    href="https://styled-components.com/"
+                    className="app__link"
+                    target="__blank"
+                    rel="noreferer noopener"
+                >
+                    <Image src={styledLogo} alt="" />
+                </Link>
             </Head>
             <CreateTodo />
             {listTodos.length > 0 && <Sorting />}

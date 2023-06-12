@@ -2,10 +2,10 @@
 
 exports[`CreateTodo matches snapshot 1`] = `
 <form
-  className="sc-ewnqHT dkEVeG"
+  className="sc-eqUAAy hCChKi"
 >
   <input
-    className="sc-gTRrQi ftFmhr input"
+    className="sc-gEvEer fWxKnT input"
     data-testid="todo-input"
     id="new-todo-input"
     onChange={[Function]}
@@ -14,7 +14,7 @@ exports[`CreateTodo matches snapshot 1`] = `
     value=""
   />
   <button
-    className="sc-bgqQcB jbxjhH button"
+    className="sc-aXZVg kgdjuQ button"
     data-testid="todo-create-btn"
     disabled={true}
     onClick={[Function]}

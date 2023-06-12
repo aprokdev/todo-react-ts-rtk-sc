@@ -28,10 +28,6 @@ module.exports = {
     },
     module: {
         rules: [
-            // {
-            //     test: /\.(scss|sass|css)?$/,
-            //     use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
-            // },
             {
                 test: /\.(js|jsx|tsx|ts)?$/,
                 exclude: /(node_modules|bower_components)/,

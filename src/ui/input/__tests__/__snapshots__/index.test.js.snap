@@ -2,7 +2,7 @@
 
 exports[`Input matches snapshot 1`] = `
 <input
-  className="sc-bgqQcB kZcuuI input test"
+  className="sc-aXZVg hntcNz input test"
   data-testid="input"
   id="test"
   onBlur={[Function]}
