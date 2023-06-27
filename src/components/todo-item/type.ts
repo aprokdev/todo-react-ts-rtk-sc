@@ -1,7 +1,8 @@
-import { IAction, ITodo } from '~src/todo-context/types';
+import { AppDispatch } from '@src/app-state/store';
+import { ITodo } from '@src/app-state/todos/todosSlice';
 
 export interface ITodoProps {
     todo: ITodo;
-    dispatch: React.Dispatch<IAction>;
+    dispatch: AppDispatch;
     testId: string;
 }

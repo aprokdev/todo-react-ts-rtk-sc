@@ -1,11 +1,11 @@
 /* eslint-disable no-extra-boolean-cast */
+import { addTodo } from '@app-state/todos/todosSlice';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
-import { addTodo } from '~app-state/todos/todosSlice';
-import Button from '~ui/button';
-import Input from '~ui/input';
-import { $ipadPortrait } from '~styles/vars';
+import Button from '@ui/button';
+import Input from '@ui/input';
+import { $ipadPortrait } from '@styles/vars';
 
 export const Form = styled.form`
     margin-bottom: 32px;

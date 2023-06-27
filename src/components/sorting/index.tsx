@@ -1,16 +1,16 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import styled from 'styled-components';
 import {
     sortByAlphabet,
     sortByAlphabetReverse,
     sortByDate,
-} from '~app-state/sortingTitle/sortingTitleSlice';
-import { RootState } from '~app-state/store';
-import { sortingText } from '~todo-context/reducer';
+} from '@app-state/sortingTitle/sortingTitleSlice';
+import { sortingText } from '@app-state/sortingTitle/sortingTitleSlice';
+import { RootState } from '@app-state/store';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import styled from 'styled-components';
 
 export const SortingWrap = styled.div`
     display: flex;

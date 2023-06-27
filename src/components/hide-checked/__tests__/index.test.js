@@ -1,7 +1,7 @@
+import { setupStore } from '@app-state/store';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { act, create } from 'react-test-renderer';
-import { setupStore } from '~app-state/store';
 import HideChecked from '../index';
 
 const store = setupStore();

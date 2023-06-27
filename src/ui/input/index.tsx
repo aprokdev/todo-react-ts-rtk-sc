@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 // import React, { LegacyRef } from 'react';
 import React from 'react';
 import styled from 'styled-components';
-import { $primary } from '~styles/vars';
+import { $primary } from '@styles/vars';
 import { IInputProps } from './types';
 
 export const StyledInput = styled.input<IInputProps>`

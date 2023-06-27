@@ -1,7 +1,7 @@
+import hideCompletedReducer from '@app-state/hideCompleted/hideCompletedSlice';
+import sortingTitleReducer from '@app-state/sortingTitle/sortingTitleSlice';
+import todosReducer from '@app-state/todos/todosSlice';
 import { PreloadedState, combineReducers, configureStore } from '@reduxjs/toolkit';
-import hideCompletedReducer from '~app-state/hideCompleted/hideCompletedSlice';
-import sortingTitleReducer from '~app-state/sortingTitle/sortingTitleSlice';
-import todosReducer from '~app-state/todos/todosSlice';
 
 export const rootReducer = combineReducers({
     todos: todosReducer,

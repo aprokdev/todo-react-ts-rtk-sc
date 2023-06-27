@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+import { RootState } from '@app-state/store';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '~app-state/store';
-import { ITodo } from '~src/todo-context/types';
-import TodoItem from '~components/todo-item/index';
+import { ITodo } from '@src/app-state/todos/todosSlice';
+import TodoItem from '@components/todo-item/index';
 
 function TodosList(): JSX.Element {
     const listTodos = useSelector((state: RootState) => state.todos);

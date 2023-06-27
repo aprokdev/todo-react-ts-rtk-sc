@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
-import CreateTodo from '~components/create-todo';
-import HideChecked from '~components/hide-checked';
-import Sorting from '~components/sorting';
-import TodosList from '~components/todos-list';
-import reduxLogo from '~img/redux.svg';
-import styledLogo from '~img/styled-components-logo.png';
-import tsLogo from '~img/tsLogo.svg';
+import CreateTodo from '@components/create-todo';
+import HideChecked from '@components/hide-checked';
+import Sorting from '@components/sorting';
+import TodosList from '@components/todos-list';
+import reduxLogo from '@img/redux.svg';
+import styledLogo from '@img/styled-components-logo.png';
+import tsLogo from '@img/tsLogo.svg';
 import { RootState } from './app-state/store';
 import { $ipadPortrait } from './styles/vars';
 

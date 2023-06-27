@@ -1,11 +1,11 @@
+import { sortingText } from '@app-state/sortingTitle/sortingTitleSlice';
+import { setupStore } from '@app-state/store';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { act, create } from 'react-test-renderer';
-import { sortingText } from '~app-state/sortingTitle/sortingTitleSlice';
-import { setupStore } from '~app-state/store';
-import { renderWithProvider } from '~src/app-state/test-utils';
+import { renderWithProvider } from '@src/app-state/test-utils';
 import App from '../../app';
 
 const store = setupStore();

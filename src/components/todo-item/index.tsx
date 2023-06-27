@@ -1,15 +1,15 @@
 /* eslint-disable jsx-a11y/no-autofocus */
+import { checkTodo, deleteTodo, editTodo } from '@app-state/todos/todosSlice';
 import PropTypes from 'prop-types';
 import React, { ChangeEvent, MouseEvent } from 'react';
 import { useInView } from 'react-intersection-observer';
 import 'react-intersection-observer/test-utils';
 import styled from 'styled-components';
-import { checkTodo, deleteTodo, editTodo } from '~app-state/todos/todosSlice';
-import { ITodo } from '~src/todo-context/types';
-import Checkbox from '~ui/checkbox';
-import Label from '~ui/label';
-import TextareaAutosize from '~ui/textarea-autosize';
-import { $ipadPortrait, $primary, $primaryActive, $text01 } from '~styles/vars';
+import { ITodo } from '@src/app-state/todos/todosSlice';
+import Checkbox from '@ui/checkbox';
+import Label from '@ui/label';
+import TextareaAutosize from '@ui/textarea-autosize';
+import { $ipadPortrait, $primary, $primaryActive, $text01 } from '@styles/vars';
 import { ITodoProps } from './type';
 
 export const Wrapper = styled.div<{ isVisible: boolean }>`

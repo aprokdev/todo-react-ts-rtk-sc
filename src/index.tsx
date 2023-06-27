@@ -1,8 +1,8 @@
+// import { Normalize } from 'styled-normalize';
+import { setupStore } from '@app-state/store';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-// import { Normalize } from 'styled-normalize';
-import { setupStore } from '~app-state/store';
 import App from './app';
 import GlobalStyle from './globalStyles';
 
