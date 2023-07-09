@@ -5,7 +5,7 @@ exports[`Sorting matches snapshot 1`] = `
   className="sc-aXZVg ewAiZs"
 >
   <h3
-    className="sc-gEvEer ggvGmO"
+    className="sc-gEvEer ggvGmO sorting"
     onClick={[Function]}
     onKeyDown={[Function]}
     tabIndex={0}

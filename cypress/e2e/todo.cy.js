@@ -4,7 +4,7 @@ const page = 'http://localhost:3000/';
 const todos = ['Todo number one', 'Todo number two', 'Todo number three'];
 const typeDelay = 0;
 
-describe('My First E2E Test', () => {
+describe('Todo Functionality', () => {
     beforeEach(() => {
         cy.clearLocalStorage();
         cy.viewport(1366, 768);

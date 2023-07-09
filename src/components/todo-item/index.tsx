@@ -107,7 +107,7 @@ function TodoItem({ todo, dispatch, testId }: ITodoProps): JSX.Element {
     );
 
     return (
-        <Wrapper isVisible={isVisible} data-testid={testId} ref={ref}>
+        <Wrapper isVisible={isVisible} data-testid={testId} ref={ref} className="todo-item">
             <CheckGroup>
                 <Checkbox
                     checked={isCompleted}

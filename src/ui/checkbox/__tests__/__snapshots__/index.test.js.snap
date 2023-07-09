@@ -14,7 +14,7 @@ exports[`Checkbox matches snapshot 1`] = `
     type="checkbox"
   />
   <label
-    className="sc-gEvEer bIYNgM"
+    className="sc-gEvEer bIYNgM checkbox__square"
     data-testid="checkbox-square"
     htmlFor="test"
     onKeyDown={[Function]}

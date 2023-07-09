@@ -2,7 +2,7 @@
 
 exports[`TodoItem matches snapshot 1`] = `
 <div
-  className="sc-iGgWBj brzGwo"
+  className="sc-iGgWBj brzGwo todo-item"
 >
   <div
     className="sc-gsFSXq fBvPWd"
@@ -20,7 +20,7 @@ exports[`TodoItem matches snapshot 1`] = `
         type="checkbox"
       />
       <label
-        className="sc-gEvEer bIYNgM"
+        className="sc-gEvEer bIYNgM checkbox__square"
         data-testid="Test-cb-square"
         htmlFor="todo-item"
         onKeyDown={[Function]}

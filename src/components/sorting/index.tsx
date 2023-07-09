@@ -52,6 +52,7 @@ function Sorting() {
                 tabIndex={0}
                 ref={headerRef}
                 onKeyDown={onKeyDown}
+                className="sorting"
             >
                 ✨ Sort tasks by: {sortingTitle}
             </SortingTitle>

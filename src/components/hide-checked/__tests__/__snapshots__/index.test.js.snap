@@ -17,7 +17,7 @@ exports[`Sorting matches snapshot 1`] = `
       type="checkbox"
     />
     <label
-      className="sc-gEvEer bIYNgM"
+      className="sc-gEvEer bIYNgM checkbox__square"
       data-testid="sort-checked-square"
       htmlFor="#sort-checked"
       onKeyDown={[Function]}

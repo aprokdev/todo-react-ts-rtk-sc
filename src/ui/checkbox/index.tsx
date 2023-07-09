@@ -62,7 +62,13 @@ function Checkbox(props: ICheckboxProps): JSX.Element {
                 ref={inputRef}
                 data-testid={`${testId}-input`}
             />
-            <Label htmlFor={id} tabIndex={0} onKeyDown={onKeyDown} data-testid={`${testId}-square`}>
+            <Label
+                htmlFor={id}
+                tabIndex={0}
+                onKeyDown={onKeyDown}
+                data-testid={`${testId}-square`}
+                className="checkbox__square"
+            >
                 {checked && <IconCheck color="#fff" />}
             </Label>
         </Wrapper>
