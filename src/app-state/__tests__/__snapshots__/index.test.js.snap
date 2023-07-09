@@ -2,49 +2,49 @@
 
 exports[`Todo Functionality matches snapshot 1`] = `
 <div
-  className="sc-jEACwC ygQEZ"
+  className="sc-cPiKLX ctQBJR"
 >
   <div
-    className="sc-cPiKLX exOsxM"
+    className="sc-dLMFU cNLTgz"
   >
     <h1
-      className="sc-dLMFU hCIGDb"
+      className="sc-eDPEul favJBY"
     >
       Todo List
     </h1>
     <a
-      className="sc-eDPEul eIcSdL app__link"
+      className="sc-eldPxv jhjkWF app__link"
       href="https://www.typescriptlang.org/"
       rel="noreferer noopener"
       target="__blank"
     >
       <img
         alt=""
-        className="sc-eldPxv gyWwSM"
+        className="sc-fPXMVe fqyguL"
         src=""
       />
     </a>
     <a
-      className="sc-eDPEul eIcSdL app__link"
+      className="sc-eldPxv jhjkWF app__link"
       href="https://redux-toolkit.js.org/"
       rel="noreferer noopener"
       target="__blank"
     >
       <img
         alt=""
-        className="sc-eldPxv gyWwSM"
+        className="sc-fPXMVe fqyguL"
         src=""
       />
     </a>
     <a
-      className="sc-eDPEul eIcSdL app__link"
+      className="sc-eldPxv jhjkWF app__link"
       href="https://styled-components.com/"
       rel="noreferer noopener"
       target="__blank"
     >
       <img
         alt=""
-        className="sc-eldPxv gyWwSM"
+        className="sc-fPXMVe fqyguL"
         src=""
       />
     </a>

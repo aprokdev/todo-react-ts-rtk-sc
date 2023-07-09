@@ -2,10 +2,10 @@
 
 exports[`TodoItem matches snapshot 1`] = `
 <div
-  className="sc-dcJsrY dvISRP"
+  className="sc-iGgWBj brzGwo"
 >
   <div
-    className="sc-iGgWBj hbfUxH"
+    className="sc-gsFSXq fBvPWd"
   >
     <span
       className="sc-aXZVg ZiuFJ checkbox"
@@ -36,12 +36,12 @@ exports[`TodoItem matches snapshot 1`] = `
     </label>
   </div>
   <span
-    className="sc-gsFSXq dOdxJB"
+    className="sc-kAyceB isYtYG"
   >
     02/12/23, 03:00:43 PM
   </span>
   <button
-    className="sc-imWYAI eZMYSl"
+    className="sc-jXbUNg iPCopP"
     data-testid="Test-edit"
     disabled={false}
     onClick={[Function]}
@@ -50,12 +50,12 @@ exports[`TodoItem matches snapshot 1`] = `
     Edit
   </button>
   <span
-    className="sc-kAyceB iApKAT"
+    className="sc-imWYAI koeqqG"
   >
     /
   </span>
   <button
-    className="sc-imWYAI eZMYSl"
+    className="sc-jXbUNg iPCopP"
     data-testid="Test-delete"
     disabled={false}
     onClick={[Function]}

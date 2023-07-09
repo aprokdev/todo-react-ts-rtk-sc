@@ -1,4 +1,4 @@
-import { sortingText } from '../../src/todo-context/reducer';
+import { sortingText } from '@app-state/sortingTitle/sortingTitleSlice';
 
 const page = 'http://localhost:3000/';
 const todos = ['Todo number one', 'Todo number two', 'Todo number three'];
