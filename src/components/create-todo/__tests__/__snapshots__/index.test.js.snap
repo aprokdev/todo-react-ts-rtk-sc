@@ -5,7 +5,7 @@ exports[`CreateTodo matches snapshot 1`] = `
   className="sc-eqUAAy hCChKi"
 >
   <input
-    className="sc-gEvEer fWxKnT input"
+    className="sc-gEvEer tkJfB input"
     data-testid="todo-input"
     id="new-todo-input"
     onChange={[Function]}

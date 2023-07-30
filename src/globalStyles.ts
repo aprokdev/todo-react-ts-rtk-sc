@@ -24,12 +24,13 @@ a {
     text-decoration: none;
 }
 
-a,
-button,
-label,
-[role='button'] {
-    // outline: none;
+a:focus-visible,
+button:focus-visible,
+label:focus-visible,
+input:focus-visible,
+[role='button']:focus-visible {
     outline-color: blue;
+    outline-offset: 3px;
 }
 
 input::placeholder,

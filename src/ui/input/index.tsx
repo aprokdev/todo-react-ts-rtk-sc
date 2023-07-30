@@ -15,11 +15,13 @@ export const StyledInput = styled.input<IInputProps>`
     line-height: 52px;
     border: 2px solid #ccc;
     border-radius: 8px;
-    outline: none;
-    transition: all 0.2s ease;
+    transition: border-color 0.2s ease;
 
     &:focus {
         border: 2px solid ${$primary};
+    }
+    &:focus-visible {
+        outline-offset: 4px;
     }
 `;
 
