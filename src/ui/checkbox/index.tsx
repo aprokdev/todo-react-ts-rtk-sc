@@ -6,18 +6,13 @@ import { $colorSecondary, $primary } from '@styles/vars';
 import { IconCheck } from './icon';
 import { ICheckboxProps } from './types';
 
-export const Wrapper = styled.span`
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 16px;
-`;
-
 export const Label = styled.label`
     display: block;
-    width: 24px;
-    height: 24px;
-    background-color: ${$colorSecondary};
+    width: 28px;
+    height: 28px;
+    // background-color: ${$colorSecondary};
     border-radius: 4px;
+    border: 2px solid ${$primary};
     cursor: pointer;
     overflow: hidden;
     transition: background-color ease 0.2s;
@@ -27,6 +22,19 @@ export const Label = styled.label`
         width: 24px;
         height: 24px;
         line-height: 24px;
+    }
+`;
+
+export const Wrapper = styled.span`
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 16px;
+
+    &.disabled {
+        opacity: 0.4;
+        ${Label} {
+            cursor: not-allowed;
+        }
     }
 `;
 
@@ -42,7 +50,7 @@ export const CheckboxInput = styled.input`
 `;
 
 function Checkbox(props: ICheckboxProps): JSX.Element {
-    const { className, checked, onChange, id, testId = 'checkbox' } = props;
+    const { className, checked, onChange, id, testId = 'checkbox', disabled } = props;
     const inputRef = React.useRef(null);
 
     const onKeyDown = React.useCallback((event: React.KeyboardEvent<HTMLLabelElement>) => {
@@ -53,7 +61,10 @@ function Checkbox(props: ICheckboxProps): JSX.Element {
     }, []);
 
     return (
-        <Wrapper className={`checkbox${className ? ` ${className}` : ''}`} data-testid={testId}>
+        <Wrapper
+            className={`checkbox${className ? ` ${className}` : ''}${disabled ? ' disabled' : ''}`}
+            data-testid={testId}
+        >
             <CheckboxInput
                 type="checkbox"
                 checked={checked}
@@ -61,6 +72,7 @@ function Checkbox(props: ICheckboxProps): JSX.Element {
                 onChange={onChange}
                 ref={inputRef}
                 data-testid={`${testId}-input`}
+                disabled={disabled}
             />
             <Label
                 htmlFor={id}

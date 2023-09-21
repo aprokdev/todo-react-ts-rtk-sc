@@ -72,6 +72,14 @@ export const Image = styled.img`
 function App() {
     const listTodos = useSelector((state: RootState) => state.todos);
 
+    const isCheckedTodos = React.useMemo(() => {
+        return (
+            Array.isArray(listTodos) &&
+            listTodos.length > 0 &&
+            listTodos.find(({ isCompleted }) => isCompleted)
+        );
+    }, [listTodos]);
+
     return (
         <Wrap>
             <Head>
@@ -104,9 +112,12 @@ function App() {
             <CreateTodo />
             {listTodos.length > 0 && <Sorting />}
             <TodosList />
-            {Array.isArray(listTodos) &&
-                listTodos.length > 0 &&
-                listTodos.find(({ isCompleted }) => isCompleted) && <HideChecked />}
+            <div className="app__bottom">
+                {Array.isArray(listTodos) && listTodos.length > 0 && (
+                    <HideChecked disabled={!isCheckedTodos} />
+                )}
+                {/* <ClearLocalStorage /> */}
+            </div>
         </Wrap>
     );
 }

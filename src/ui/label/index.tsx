@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import * as React from 'react';
 import styled from 'styled-components';
+import { $text01 } from '@styles/vars';
 import { ILabelProps } from './types';
 
 export const StyledLabel = styled.label`
@@ -9,18 +10,23 @@ export const StyledLabel = styled.label`
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
-    color: $text-01;
+    color: ${$text01};
     cursor: pointer;
     vertical-align: top;
     white-space: normal;
+
+    &.disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+    }
 `;
 
 function Label(props: ILabelProps): JSX.Element {
-    const { children, className, htmlFor, testId = 'label' } = props;
+    const { children, className, htmlFor, testId = 'label', disabled } = props;
 
     return (
         <StyledLabel
-            className={`label${className ? ` ${className}` : ''}`}
+            className={`label${className ? ` ${className}` : ''}${disabled ? ' disabled' : ''}`}
             htmlFor={htmlFor}
             data-testid={testId}
         >
