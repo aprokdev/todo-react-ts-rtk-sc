@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
+import ClearLocalStorage from '@components/clear-local-storage';
 import CreateTodo from '@components/create-todo';
 import HideChecked from '@components/hide-checked';
 import Sorting from '@components/sorting';
@@ -69,6 +70,13 @@ export const Image = styled.img`
     height: 100%;
 `;
 
+export const Bottom = styled.div`
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
+
 function App() {
     const listTodos = useSelector((state: RootState) => state.todos);
 
@@ -112,12 +120,12 @@ function App() {
             <CreateTodo />
             {listTodos.length > 0 && <Sorting />}
             <TodosList />
-            <div className="app__bottom">
+            <Bottom>
                 {Array.isArray(listTodos) && listTodos.length > 0 && (
                     <HideChecked disabled={!isCheckedTodos} />
                 )}
-                {/* <ClearLocalStorage /> */}
-            </div>
+                <ClearLocalStorage />
+            </Bottom>
         </Wrap>
     );
 }

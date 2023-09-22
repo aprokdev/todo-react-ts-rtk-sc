@@ -56,6 +56,7 @@ export const ActionButton = styled.button`
     color: ${$primary};
     background-color: transparent;
     border: none;
+    text-transform: uppercase;
     cursor: pointer;
 
     &:active {

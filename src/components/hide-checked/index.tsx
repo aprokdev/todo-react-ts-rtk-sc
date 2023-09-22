@@ -10,8 +10,7 @@ import { IHideCheckedProps } from './types';
 export const Wrapper = styled.div`
     display: flex;
     align-items: center;
-    flex-grow: 1;
-    margin-top: 52px;
+    min-height: 56px;
     margin-right: 20px;
     .checkbox,
     .label {

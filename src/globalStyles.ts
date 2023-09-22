@@ -103,7 +103,7 @@ h2 {
 h3 {
     // font-size: 17px;
     // line-height: 24px;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 36px;
     @media (min-width: ${$desktopBreakpoint}) {
         font-size: 36px;

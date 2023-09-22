@@ -44,6 +44,8 @@ function isRejectedAction(action: AnyAction): action is RejectedAction {
     return action.type.endsWith('rejected');
 }
 
+export const LS_TODOS_LIST_NAME = 'listTodos';
+
 export const todosSlice = createSlice({
     name: 'todos',
     initialState: () => JSON.parse(localStorage.getItem('listTodos')) || [],
