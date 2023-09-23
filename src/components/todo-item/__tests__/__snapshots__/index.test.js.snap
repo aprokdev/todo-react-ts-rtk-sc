@@ -8,19 +8,19 @@ exports[`TodoItem matches snapshot 1`] = `
     className="sc-gsFSXq fBvPWd"
   >
     <span
-      className="sc-aXZVg ZiuFJ checkbox"
+      className="sc-gEvEer jFkeOs checkbox"
       data-testid="Test-cb"
     >
       <input
         checked={false}
-        className="sc-eqUAAy dAZlDD"
+        className="sc-eqUAAy jKFBDX"
         data-testid="Test-cb-input"
         id="todo-item"
         onChange={[Function]}
         type="checkbox"
       />
       <label
-        className="sc-gEvEer bIYNgM checkbox__square"
+        className="sc-aXZVg kEaNYa checkbox__square"
         data-testid="Test-cb-square"
         htmlFor="todo-item"
         onKeyDown={[Function]}
@@ -28,7 +28,7 @@ exports[`TodoItem matches snapshot 1`] = `
       />
     </span>
     <label
-      className="sc-fqkvVR gTphDY label"
+      className="sc-fqkvVR wzNec label"
       data-testid="Test-label"
       htmlFor="todo-item"
     >
@@ -41,7 +41,7 @@ exports[`TodoItem matches snapshot 1`] = `
     02/12/23, 03:00:43 PM
   </span>
   <button
-    className="sc-jXbUNg iPCopP"
+    className="sc-jXbUNg iLdUAm"
     data-testid="Test-edit"
     disabled={false}
     onClick={[Function]}
@@ -55,7 +55,7 @@ exports[`TodoItem matches snapshot 1`] = `
     /
   </span>
   <button
-    className="sc-jXbUNg iPCopP"
+    className="sc-jXbUNg iLdUAm"
     data-testid="Test-delete"
     disabled={false}
     onClick={[Function]}

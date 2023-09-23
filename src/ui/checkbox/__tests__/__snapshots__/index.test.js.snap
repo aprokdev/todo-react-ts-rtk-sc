@@ -2,19 +2,19 @@
 
 exports[`Checkbox matches snapshot 1`] = `
 <span
-  className="sc-aXZVg ZiuFJ checkbox test"
+  className="sc-gEvEer jFkeOs checkbox test"
   data-testid="checkbox"
 >
   <input
     checked={false}
-    className="sc-eqUAAy dAZlDD"
+    className="sc-eqUAAy jKFBDX"
     data-testid="checkbox-input"
     id="test"
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="sc-gEvEer bIYNgM checkbox__square"
+    className="sc-aXZVg kEaNYa checkbox__square"
     data-testid="checkbox-square"
     htmlFor="test"
     onKeyDown={[Function]}

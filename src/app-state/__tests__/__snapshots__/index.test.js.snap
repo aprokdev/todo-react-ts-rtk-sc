@@ -2,58 +2,58 @@
 
 exports[`Todo Functionality matches snapshot 1`] = `
 <div
-  className="sc-cPiKLX ctQBJR"
+  className="sc-eDPEul fqdiep"
 >
   <div
-    className="sc-dLMFU cNLTgz"
+    className="sc-eldPxv jZScjW"
   >
     <h1
-      className="sc-eDPEul favJBY"
+      className="sc-fPXMVe hzdiAB"
     >
       Todo List
     </h1>
     <a
-      className="sc-eldPxv jhjkWF app__link"
+      className="sc-gFqAkR jiKVQS app__link"
       href="https://www.typescriptlang.org/"
       rel="noreferer noopener"
       target="__blank"
     >
       <img
         alt=""
-        className="sc-fPXMVe fqyguL"
+        className="sc-ikkxIA kTOmEe"
         src=""
       />
     </a>
     <a
-      className="sc-eldPxv jhjkWF app__link"
+      className="sc-gFqAkR jiKVQS app__link"
       href="https://redux-toolkit.js.org/"
       rel="noreferer noopener"
       target="__blank"
     >
       <img
         alt=""
-        className="sc-fPXMVe fqyguL"
+        className="sc-ikkxIA kTOmEe"
         src=""
       />
     </a>
     <a
-      className="sc-eldPxv jhjkWF app__link"
+      className="sc-gFqAkR jiKVQS app__link"
       href="https://styled-components.com/"
       rel="noreferer noopener"
       target="__blank"
     >
       <img
         alt=""
-        className="sc-fPXMVe fqyguL"
+        className="sc-ikkxIA kTOmEe"
         src=""
       />
     </a>
   </div>
   <form
-    className="sc-eqUAAy hCChKi"
+    className="sc-dcJsrY fEdaLH"
   >
     <input
-      className="sc-gEvEer tkJfB input"
+      className="sc-fqkvVR fsJNVR input"
       data-testid="todo-input"
       id="new-todo-input"
       onChange={[Function]}
@@ -71,5 +71,12 @@ exports[`Todo Functionality matches snapshot 1`] = `
       Add
     </button>
   </form>
+  <div
+    className="sc-dAbbOL eSvOWC"
+  >
+    <div
+      className="sc-gEvEer gBbweT"
+    />
+  </div>
 </div>
 `;
