@@ -11,6 +11,7 @@ import { RootState } from '@app-state/store';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
+import { $desktopBreakpoint } from '@styles/vars';
 
 export const SortingWrap = styled.div`
     display: flex;
@@ -18,7 +19,14 @@ export const SortingWrap = styled.div`
 `;
 
 export const SortingTitle = styled.h3`
+    font-size: 22px;
+    line-height: 36px;
     cursor: pointer;
+    @media (min-width: ${$desktopBreakpoint}) {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 40px;
+    }
 `;
 
 function Sorting() {
