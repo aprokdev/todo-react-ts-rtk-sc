@@ -22,11 +22,11 @@ export const SortingTitle = styled.h3`
     font-size: 22px;
     line-height: 36px;
     cursor: pointer;
-    @media (min-width: ${$desktopBreakpoint}) {
-        font-size: 36px;
-        font-weight: 400;
-        line-height: 40px;
-    }
+    // @media (min-width: ${$desktopBreakpoint}) {
+    //     font-size: 36px;
+    //     font-weight: 400;
+    //     line-height: 40px;
+    // }
 `;
 
 function Sorting() {
