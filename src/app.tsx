@@ -91,7 +91,7 @@ function App() {
     return (
         <Wrap>
             <Head>
-                <Title>Todo List</Title>
+                <Title className="app__title">Todo List</Title>
                 <Link
                     href="https://www.typescriptlang.org/"
                     className="app__link"

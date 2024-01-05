@@ -33,6 +33,7 @@ export const Form = styled.form`
 function CreateTodo() {
     const dispatch = useDispatch();
     const [text, updateText] = React.useState<string>('');
+    const inputRef = React.useRef<HTMLInputElement>();
 
     const createTodo = React.useCallback(
         (event: React.MouseEvent<HTMLInputElement>) => {
@@ -41,6 +42,9 @@ function CreateTodo() {
                 dispatch(addTodo({ text }));
             }
             updateText('');
+            if (inputRef.current) {
+                inputRef.current.focus();
+            }
         },
         [text, dispatch]
     );
@@ -60,6 +64,7 @@ function CreateTodo() {
                 onChange={onChange}
                 id="new-todo-input"
                 testId="todo-input"
+                ref={inputRef}
             />
             <Button type="submit" onClick={createTodo} disabled={!text} testId="todo-create-btn">
                 Add

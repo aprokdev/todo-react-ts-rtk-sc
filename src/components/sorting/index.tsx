@@ -54,13 +54,13 @@ function Sorting() {
     }, []);
 
     return (
-        <SortingWrap>
+        <SortingWrap className="sorting">
             <SortingTitle
                 onClick={onHeaderlickHeader}
                 tabIndex={0}
                 ref={headerRef}
                 onKeyDown={onKeyDown}
-                className="sorting"
+                className="sorting__title"
             >
                 ✨ Sort tasks by: {sortingTitle}
             </SortingTitle>
